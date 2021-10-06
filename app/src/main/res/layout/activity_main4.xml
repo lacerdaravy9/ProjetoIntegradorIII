@@ -5,28 +5,43 @@
     android:layout_width="match_parent"
     android:background="@drawable/background"
     android:layout_height="match_parent"
-    tools:context=".MainActivity3">
+    tools:context=".MainActivity4">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="136dp"
-        android:layout_height="95dp"
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="16dp"
+        android:text="Cadastro do Professor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/whatsapp_image_2021_10_04_at_11_50_44_removebg" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="136dp"
+        android:layout_height="95dp"
+        app:srcCompat="@drawable/whatsapp_image_2021_10_04_at_11_50_44_removebg"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="1dp" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout3"
+        android:id="@+id/textInputLayout10"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="360dp"
@@ -35,59 +50,24 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout4"
+        android:id="@+id/textInputLayout11"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout10">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Informe seu Peso" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout5"
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Informe sua Altura" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout6"
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:hint="Informe sua Idade" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout7"
+        android:id="@+id/textInputLayout12"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -95,16 +75,16 @@
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6">
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout11">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Informe seu CPF" />
+            android:hint="Informe o número do seu CREF" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout8"
+        android:id="@+id/textInputLayout13"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -112,36 +92,21 @@
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7">
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout12">
 
         <EditText
-            android:id="@+id/editTextTextPassword"
+            android:id="@+id/editTextPhone"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Informe sua Senha"
-            android:inputType="textPassword" />
+            android:hint="Informe seu número de Telefone"
+            android:inputType="phone"
+            tools:ignore="SpeakableTextPresentCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="148dp"
-        android:layout_marginBottom="16dp"
-        android:text="Cadastro de Aluno"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textInputLayout3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
-
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout9"
+        android:id="@+id/textInputLayout14"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -149,28 +114,41 @@
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout8">
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout13">
 
-        <EditText
-            android:id="@+id/editTextTextPassword4"
-            android:layout_width="360dp"
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Confirme sua Senha"
-            android:inputType="textPassword" />
+            android:hint="Informe sua Senha" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout15"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout14">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirme sua Senha" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/button6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="153dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="153dp"
-        android:backgroundTint="#070707"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="64dp"
+        android:backgroundTint="#0B0B0B"
         android:text="Concluir Cadastro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout9" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout15" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,84 +5,80 @@
     android:layout_width="match_parent"
     android:background="@drawable/background"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity5">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="242dp"
-        android:layout_height="245dp"
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:scaleType="centerCrop"
+        android:backgroundTint="#070707"
+        android:text="CADASTRE-SE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="245dp"
+        android:layout_height="242dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/whatsapp_image_2021_10_04_at_11_50_44_removebg" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout"
+        android:id="@+id/textInputLayout16"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="52dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/imageView5">
 
-        <EditText
-            android:id="@+id/editTextNumberDecimal"
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Digite o número do seu CPF"
-            android:inputType="numberDecimal"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:hint="Digite o número do seu CREF" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
+        android:id="@+id/textInputLayout17"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout16">
 
         <EditText
-            android:id="@+id/editTextTextPassword2"
+            android:id="@+id/editTextTextPassword3"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:hint="Digite sua Senha"
+            android:hint="Digite sua Senha "
             android:inputType="textPassword"
             tools:ignore="SpeakableTextPresentCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button7"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:backgroundTint="@color/black"
-        android:text="Login"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#040404"
+        android:text="LOGIN"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#070707"
-        android:text="Cadastre-se"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout17" />
 </androidx.constraintlayout.widget.ConstraintLayout>
