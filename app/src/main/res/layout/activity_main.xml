@@ -53,13 +53,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
 
         <EditText
-            android:id="@+id/editTextTextPassword3"
+            android:id="@+id/editTextTextPassword2"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
             android:hint="Digite sua Senha"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            tools:ignore="SpeakableTextPresentCheck" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -67,7 +68,7 @@
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:backgroundTint="#CF4E0A"
+        android:backgroundTint="@color/black"
         android:text="Login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
